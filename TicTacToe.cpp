@@ -2,6 +2,11 @@
 #include <vector>
 using namespace std;
 
+/*
+CreateBoard: creates a vector to represent tic tac toe board.
+param: none
+return: int vector 
+*/
 vector<int> CreateBoard()
 {
 
@@ -17,6 +22,11 @@ vector<int> CreateBoard()
     return board;
 }
 
+/*
+DisplayBoard: prints board vector
+param: int vector board
+return: none
+*/
 void DisplayBoard(vector<int> board)
 {
     for (int i = 0; i < board.size(); i++)
@@ -36,6 +46,12 @@ void DisplayBoard(vector<int> board)
     }
 }
 
+/*
+GetPlayerChoice: promts user for input to place a mark
+param: none
+return: int vector choice 
+*/
+
 vector<int> GetPlayerChoice()
 {
     vector<int> choices;
@@ -50,7 +66,11 @@ vector<int> GetPlayerChoice()
     choices.push_back(choice_y);
     return choices;
 }
-
+/*
+PosToIndex: converts int vector pos into index
+param: int vector pos
+return: int index
+*/
 int PosToIndex(vector<int> pos)
 {
     int x = pos[1];
@@ -74,6 +94,12 @@ int PosToIndex(vector<int> pos)
     }
     return index;
 }
+
+/*
+PlaceMarker: places marker on pos on tic tac toe board
+param: int vector pos, int marker, int vector b
+return: int vector b
+*/
 
 vector<int> PlaceMarker(vector<int> pos, int marker, vector<int> b)
 {
