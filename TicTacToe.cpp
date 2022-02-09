@@ -29,6 +29,21 @@ void DisplayBoard(vector<int> board)
     }
 }
 
+vector<int> GetPlayerChoice()
+{
+    vector<int> choices;
+    cout << endl;
+    cout << "Input row of desired location:" << endl;
+    int choice_x;
+    cin >> choice_x;
+    choices.push_back(choice_x);
+    cout << "Input column of desired location:" << endl;
+    int choice_y;
+    cin >> choice_y;
+    choices.push_back(choice_y);
+    return choices;
+}
+
 int PosToIndex(vector<int> pos)
 {
     int x = pos[0];
@@ -65,4 +80,6 @@ int main()
 {
     vector<int> ticTacToe_board = CreateBoard();
     DisplayBoard(ticTacToe_board);
+    GetPlayerChoice();
 }
+
