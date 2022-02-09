@@ -17,18 +17,52 @@ vector<int> CreateBoard()
     return board;
 }
 
-void DisplayBoard(vector<int> board){
-    for (int i=0; i<board.size(); i++){
-        if ((i)%3==0 && i!=0){
+void DisplayBoard(vector<int> board)
+{
+    for (int i = 0; i < board.size(); i++)
+    {
+        if ((i) % 3 == 0 && i != 0)
+        {
             cout << endl;
         }
         cout << board[i];
     }
 }
 
+int PosToIndex(vector<int> pos)
+{
+    int x = pos[0];
+    int y = pos[1];
+    int index = -1;
+    if (y == 2)
+    {
+        index = x;
+    }
+    else if (y == 1)
+    {
+        index = x + 3;
+    }
+    else if (y == 0)
+    {
+        index = x + 6;
+    }
+    else
+    {
+        return -1;
+    }
+    return index;
+}
+
+void PlaceMarker(vector<int> pos, int marker, vector<int> b)
+{
+    int x = pos[0];
+    int y = pos[1];
+    int index = PosToIndex(pos);
+    b[index] = marker;
+}
+
 int main()
 {
     vector<int> ticTacToe_board = CreateBoard();
     DisplayBoard(ticTacToe_board);
-
 }
