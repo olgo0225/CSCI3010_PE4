@@ -17,9 +17,18 @@ vector<int> CreateBoard()
     return board;
 }
 
+void DisplayBoard(vector<int> board){
+    for (int i=0; i<board.size(); i++){
+        if ((i)%3==0 && i!=0){
+            cout << endl;
+        }
+        cout << board[i];
+    }
+}
 
 int main()
 {
     vector<int> ticTacToe_board = CreateBoard();
+    DisplayBoard(ticTacToe_board);
 
 }
