@@ -26,12 +26,19 @@ void DisplayBoard(vector<int> board){
     }
 }
 
-string GetPlayerChoice(){
+vector <int> GetPlayerChoice(){
+    vector <int> choices;
     cout << endl;
-    cout << "Input location to play:" << endl;
-    string choice;
-    cin >> choice;
-    return choice;
+    cout << "Input row of desired location:" << endl;
+    int choice_x;
+    cin >> choice_x;
+    choices.push_back(choice_x);
+    cout << "Input column of desired location:" << endl;
+    int choice_y;
+    cin >> choice_y;
+    choices.push_back(choice_y);
+    return choices;
+    
 }
 
 int main()
