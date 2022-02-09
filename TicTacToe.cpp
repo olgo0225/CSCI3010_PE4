@@ -26,9 +26,18 @@ void DisplayBoard(vector<int> board){
     }
 }
 
+string GetPlayerChoice(){
+    cout << endl;
+    cout << "Input location to play:" << endl;
+    string choice;
+    cin >> choice;
+    return choice;
+}
+
 int main()
 {
     vector<int> ticTacToe_board = CreateBoard();
     DisplayBoard(ticTacToe_board);
+    GetPlayerChoice();
 
 }
