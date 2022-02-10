@@ -1,0 +1,68 @@
+PS C:\Users\vienn\Documents\Spring2022\IntensiveProgramming\PE4\CSCI3010_PE4> ./a
+[][][]
+[][][]
+[][][]
+Input row of desired location:
+0
+Input column of desired location:
+0
+0 [][]
+[][][]
+[][][]
+Input row of desired location:
+1
+Input column of desired location:
+1
+0 [][]
+[]1 []
+[][][]
+Input row of desired location:
+0
+Input column of desired location:
+1
+0 0 []
+[]1 []
+[][][]
+Input row of desired location:
+0
+Input column of desired location:
+2
+0 0 1 
+[]1 []
+[][][]
+Input row of desired location:
+2
+Input column of desired location:
+0
+0 0 1 
+[]1 []
+0 [][]
+Input row of desired location:
+1
+Input column of desired location:
+0
+0 0 1
+1 1 []
+0 [][]
+Input row of desired location:
+1
+Input column of desired location:
+2
+0 0 1
+1 1 0
+0 [][]
+Input row of desired location:
+2
+Input column of desired location:
+1
+0 0 1
+1 1 0
+0 1 []
+Input row of desired location:
+2
+Input column of desired location:
+2
+0 0 1
+1 1 0
+0 1 0
+PS C:\Users\vienn\Documents\Spring2022\IntensiveProgramming\PE4\CSCI3010_PE4>
